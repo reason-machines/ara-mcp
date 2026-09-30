@@ -1,7 +1,7 @@
 {
   "name": "reason",
   "displayName": "Reason",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Delegate coding work to Reason, manage projects, and follow autonomous engineering sessions from Claude.",
   "author": {
     "name": "Reason Machines",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://reasonmachines.com",
   "repository": "https://github.com/reason-machines/reason-mcp",
-  "icon": "./assets/reason-logo.png",
+  "icon": "https://raw.githubusercontent.com/reason-machines/reason-mcp/main/plugins/reason/assets/reason-logo.png",
   "documentationUrl": "https://github.com/reason-machines/reason-mcp#readme",
   "supportUrl": "https://github.com/reason-machines/reason-mcp/issues",
   "privacyPolicyUrl": "https://reasonmachines.com/privacy-policy",
