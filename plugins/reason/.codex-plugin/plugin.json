@@ -1,27 +1,30 @@
 {
   "name": "reason",
-  "version": "1.1.0+codex.20260916205156",
-  "description": "Manage Reason projects and coding sessions through the public MCP.",
+  "version": "1.1.1",
+  "description": "Launch and manage cloud coding agents across multiple machines with Reason.",
   "author": {
     "name": "Reason Machines",
     "email": "contact@reasonmachines.com",
     "url": "https://reasonmachines.com"
   },
-  "homepage": "https://github.com/reason-machines/reason-mcp",
+  "homepage": "https://reasonmachines.com",
   "repository": "https://github.com/reason-machines/reason-mcp",
   "license": "MIT",
   "keywords": [
     "reason",
-    "mcp",
-    "coding",
-    "projects"
+    "cloud-coding",
+    "coding-agents",
+    "parallel-coding",
+    "multiplayer",
+    "software-engineering",
+    "mcp"
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "Reason MCP",
-    "shortDescription": "Work with Reason from your coding agent.",
-    "longDescription": "Connect your Reason workspace to manage projects and coding sessions with the same permissions as the public API.",
+    "displayName": "Reason",
+    "shortDescription": "Cloud coding across machines",
+    "longDescription": "Launch and manage cloud coding agents with Reason. Work on coding tasks in parallel across multiple machines, organize projects, follow progress, and continue coding sessions in a shared workspace. Use Reason to delegate implementation, investigate bugs, and coordinate work with your team. Connect your Reason account to access the projects, sessions, and machines your workspace permissions allow. Tasks run asynchronously; machine access and availability depend on your workspace configuration.",
     "developerName": "Reason Machines",
     "category": "Productivity",
     "capabilities": [
@@ -31,11 +34,14 @@
     "websiteURL": "https://reasonmachines.com",
     "defaultPrompt": [
       "Show my Reason projects and recent coding sessions.",
-      "Create a Reason project for this task.",
-      "Find and continue my Reason coding session."
+      "Start a cloud coding agent to investigate a bug in my repository.",
+      "Help me organize parallel coding tasks across my Reason machines."
     ],
     "composerIcon": "./assets/reason-logo.png",
     "logo": "./assets/reason-logo.png",
-    "logoDark": "./assets/reason-logo-dark.png"
+    "logoDark": "./assets/reason-logo-dark.png",
+    "supportURL": "https://github.com/reason-machines/reason-mcp/issues",
+    "privacyPolicyURL": "https://reasonmachines.com/privacy-policy",
+    "termsOfServiceURL": "https://reasonmachines.com/terms-of-service"
   }
 }

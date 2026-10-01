@@ -53,6 +53,25 @@ class MarketplaceInstallation(unittest.TestCase):
             })
             self.assertTrue((cached[0].parent / 'skills/reason/SKILL.md').is_file())
             plugin = json.loads((cached[0].parent / '.codex-plugin/plugin.json').read_text())
+            portable = json.loads((cached[0].parent / 'plugin.json').read_text())
+            self.assertEqual(portable['$schema'],
+                             'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json')
+            self.assertEqual(portable['name'], 'reason')
+            self.assertEqual(portable['version'], '1.1.1')
+            self.assertEqual(portable['version'], plugin['version'])
+            interface = portable['extensions']['com.openai']['interface']
+            self.assertEqual(interface, plugin['interface'])
+            self.assertEqual(interface['displayName'], 'Reason')
+            self.assertEqual(interface['shortDescription'], 'Cloud coding across machines')
+            self.assertLessEqual(len(interface['shortDescription']), 30)
+            for key in ['websiteURL', 'supportURL', 'privacyPolicyURL', 'termsOfServiceURL']:
+                self.assertTrue(interface[key].startswith('https://'), key)
+            self.assertEqual(json.loads((cached[0].parent / 'mcp.json').read_text()), {
+                '$schema': 'https://agent-plugins.org/schemas/1.0.0/mcp.schema.json',
+                'mcpServers': {'reason': {
+                    'type': 'streamable-http', 'url': 'https://mcp.reasonmachines.com/mcp'
+                }}
+            })
             for key in ['composerIcon', 'logo', 'logoDark']:
                 icon = cached[0].parent / plugin['interface'][key]
                 self.assertEqual(icon.read_bytes()[:8], b'\x89PNG\r\n\x1a\n')
