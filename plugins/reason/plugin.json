@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "reason",
+  "version": "1.1.1",
+  "description": "Launch and manage cloud coding agents across multiple machines with Reason.",
+  "author": {
+    "name": "Reason Machines",
+    "email": "contact@reasonmachines.com",
+    "url": "https://reasonmachines.com"
+  },
+  "homepage": "https://reasonmachines.com",
+  "repository": "https://github.com/reason-machines/reason-mcp",
+  "license": "MIT",
+  "keywords": [
+    "reason",
+    "cloud-coding",
+    "coding-agents",
+    "parallel-coding",
+    "multiplayer",
+    "software-engineering",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Reason",
+        "shortDescription": "Cloud coding across machines",
+        "longDescription": "Launch and manage cloud coding agents with Reason. Work on coding tasks in parallel across multiple machines, organize projects, follow progress, and continue coding sessions in a shared workspace. Use Reason to delegate implementation, investigate bugs, and coordinate work with your team. Connect your Reason account to access the projects, sessions, and machines your workspace permissions allow. Tasks run asynchronously; machine access and availability depend on your workspace configuration.",
+        "developerName": "Reason Machines",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://reasonmachines.com",
+        "defaultPrompt": [
+          "Show my Reason projects and recent coding sessions.",
+          "Start a cloud coding agent to investigate a bug in my repository.",
+          "Help me organize parallel coding tasks across my Reason machines."
+        ],
+        "composerIcon": "./assets/reason-logo.png",
+        "logo": "./assets/reason-logo.png",
+        "logoDark": "./assets/reason-logo-dark.png",
+        "supportURL": "https://github.com/reason-machines/reason-mcp/issues",
+        "privacyPolicyURL": "https://reasonmachines.com/privacy-policy",
+        "termsOfServiceURL": "https://reasonmachines.com/terms-of-service"
+      }
+    }
+  }
+}
