@@ -1,6 +1,6 @@
 {
   "name": "reason",
-  "version": "1.1.0+codex.20260916205156",
+  "version": "1.1.0",
   "description": "Manage Reason projects and coding sessions through the public MCP.",
   "author": {
     "name": "Reason Machines",

@@ -13,7 +13,7 @@ Clients manage credentials; the plugin package never contains them.
 
 ## Reporting a vulnerability
 
-Please report security issues privately at [security@ara.so](mailto:security@ara.so).
+Please report security issues privately at [security@reasonmachines.com](mailto:security@reasonmachines.com).
 Do not include secrets, access tokens, or customer data in the initial report.
 
 ## Supported release
