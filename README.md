@@ -1,4 +1,4 @@
-# Reason MCP for Claude Code and Codex
+# Reason plugins for Claude Code and Codex
 
 Connect a coding agent to your Reason workspace at **https://mcp.reasonmachines.com/mcp**.
 Sign in through your browser, choose a workspace, review permissions, and connect.
@@ -9,7 +9,7 @@ The plugin contains no API key, credential, local executable or hook.
 ### Claude Code
 
 ```sh
-claude plugin marketplace add reason-machines/reason-mcp
+claude plugin marketplace add reason-machines/reason-plugins
 claude plugin install reason@reason
 ```
 
@@ -18,7 +18,7 @@ Open `/mcp` in Claude Code and authenticate Reason when prompted.
 ### Codex
 
 ```sh
-codex plugin marketplace add reason-machines/reason-mcp
+codex plugin marketplace add reason-machines/reason-plugins
 codex plugin add reason@reason
 ```
 
@@ -30,13 +30,17 @@ on acceptance into Anthropic's curated marketplace or OpenAI's public directory;
 those services review and approve listings separately.
 
 In the Codex app, open **Plugins → Add → Add plugin marketplace**, paste
-`https://github.com/reason-machines/reason-mcp`, and add the marketplace. Leave
+`https://github.com/reason-machines/reason-plugins`, and add the marketplace. Leave
 **Git ref** and **Sparse paths** empty. Select **Reason MCP → Install**, then
 complete the browser authentication prompt. No separate MCP configuration is needed.
 
-The marketplace identifier is `reason`. It can be added while the retired `ara`
-marketplace is still installed, without a name collision. After installing Reason
-MCP, remove the old plugins and marketplace through your client's plugin settings.
+The marketplace identifier is `reason`.
+
+## More from Reason
+
+- [reason-agent](https://github.com/reason-machines/reason-agent): what Reason Agent is, how to use it, releases and benchmarks.
+- [reason-cli](https://github.com/reason-machines/reason-cli): the `reason` command line.
+- [reason-marketplace](https://github.com/reason-machines/reason-marketplace): every plugin and connector Reason can use inside your workspace.
 
 ## Connect without a plugin
 

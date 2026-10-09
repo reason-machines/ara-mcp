@@ -17,7 +17,7 @@
         "url": "https://reasonmachines.com"
       },
       "category": "productivity",
-      "repository": "https://github.com/reason-machines/reason-mcp",
+      "repository": "https://github.com/reason-machines/reason-plugins",
       "license": "MIT"
     }
   ]
